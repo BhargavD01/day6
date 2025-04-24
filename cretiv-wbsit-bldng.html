@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS Beginner Practice Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .header-box {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .subtitle {
+            text-align: center;
+            margin-bottom: 0;
+            color: #e0e0e0;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        
+        .tab {
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .tab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .tab-html {
+            background-color: #ff9a76;
+            color: white;
+        }
+        
+        .tab-css {
+            background-color: #76b5ff;
+            color: white;
+        }
+        
+        .tab-practice {
+            background-color: #76ff8f;
+            color: #333;
+        }
+        
+        .content-box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: #4a6fa5;
+        }
+        
+        .guide-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .guide-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #d6336c;
+        }
+        
+        .example-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .box-1 {
+            padding: 20px;
+            margin: 10px;
+            background-color: #e7f5ff;
+            border: 1px solid #a5d8ff;
+        }
+        
+        .box-2 {
+            padding: 0;
+            margin: 30px;
+            background-color: #fff3bf;
+            border: 1px solid #ffd43b;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .flex-item {
+            padding: 10px 20px;
+            background-color: #ebfbee;
+            border: 1px solid #40c057;
+            border-radius: 4px;
+        }
+        
+        .centered-text {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            color: #2b8a3e;
+        }
+        
+        .rounded-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 300px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .divider {
+            text-align: center;
+            margin: 20px 0;
+            color: #868e96;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #868e96;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-box">
+        <h1>HTML + CSS Beginner Practice Guide</h1>
+        <p class="subtitle">Undersigned basics: HTML tags and CSS properties</p>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab tab-html">HTML</button>
+        <button class="tab tab-css">CSS</button>
+        <button class="tab tab-practice">Practice</button>
+    </div>
+    
+    <div class="content-box">
+        <h2 class="section-title">HTML Basics</h2>
+        
+        <div class="guide-item">
+            <code>&lt;html&gt;</code>
+            <p>Root element that wraps entire HTML document.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;head&gt;</code>
+            <p>Contains metadata like title, links to CSS, charset.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;body&gt;</code>
+            <p>Visible part of HTML page.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>
+            <p>Headings, h1 is largest.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;p&gt;</code>
+            <p>Paragraph text.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;div&gt;</code>
+            <p>Generic container block.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;span&gt;</code>
+            <p>Inline container.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;a href&gt;</code>
+            <p>Hyperlink.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>
+            <p>Unordered, ordered lists and items.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>&lt;table&gt;</code>
+            <p>Table structure with <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></p>
+        </div>
+    </div>
+    
+    <div class="content-box">
+        <h2 class="section-title">CSS Basics</h2>
+        
+        <div class="guide-item">
+            <code>color:</code>
+            <p>Changes text color.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>background-color:</code>
+            <p>Sets background.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>padding:</code>
+            <p>Space inside the element.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>margin:</code>
+            <p>Space outside the element.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>border:</code>
+            <p>Adds outline around the element.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>font-size:</code>
+            <p>Controls text size.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>text-align:</code>
+            <p>Aligns text.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>display:</code>
+            <p>Controls layout (block, inline, flex).</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>flexbox:</code>
+            <p>Layout system for flexible items.</p>
+        </div>
+        
+        <div class="guide-item">
+            <code>box-shadow:</code>
+            <p>Adds shadow around elements.</p>
+        </div>
+    </div>
+    
+    <div class="content-box">
+        <h2 class="section-title">🧠 Practice Examples</h2>
+        <p>Try modifying padding and margin values and observe changes.</p>
+        
+        <div class="example-box box-1">Box 1: Padding: 20px | Margin: 10px</div>
+        <div class="example-box box-2">Box 2: Padding: 0 | Margin: 30px</div>
+        
+        <div class="flex-container">
+            <div class="flex-item">Flex Item 1</div>
+            <div class="flex-item">Flex Item 2</div>
+        </div>
+        
+        <p>Experiment with text-align, font-size, and border-radius:</p>
+        
+        <div class="divider">---</div>
+        
+        <div class="centered-text">Centered and styled text!</div>
+        
+        <div class="rounded-box">Rounded corner shadow box.</div>
+        
+        <div class="divider">---</div>
+    </div>
+    
+    <footer>Made with ❤️ for Engineers | Practice Makes Bhargav Perfect!</footer>
+</body>
+</html>
